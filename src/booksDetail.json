@@ -1,0 +1,94 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "image": "https://c7.alamy.com/comp/FF76A2/world-war-ii-comic-book-ncaptain-freedom-and-friends-battle-the-axis-FF76A2.jpg",
+      "name": "Speed",
+      "read_percentage": 75,
+      "author_name": "Jackie",
+      "genre": "Comic",
+      "book_pdf":"https://oa.upm.es/50315/13/INVE_MEM_2017_273683.pdf"
+    },
+    {
+      "id": "2",
+      "image": "https://c7.alamy.com/comp/TXGBWD/back-cover-of-jackie-robinson-comic-book-half-length-portrait-of-jackie-robinson-in-brooklyn-dodgers-uniform-posed-holding-baseball-bat-TXGBWD.jpg",
+      "name": "Jackie Robinson",
+      "read_percentage": 50,
+      "author_name": "Robinson",
+      "genre": "Comic",
+      "book_pdf":"https://treasurebaybooks.com/wp-content/uploads/2019/12/WW_JackieRobinson_TX_fullSpreads.pdf"
+    },
+    {
+      "id": "3",
+      "image": "https://c7.alamy.com/comp/EXTE0G/1980s-uk-english-ghost-stories-book-cover-EXTE0G.jpg",
+      "name": "Oxford",
+      "read_percentage": 100,
+      "author_name": "Michael Cox",
+      "genre": "Horror",
+      "book_pdf":"https://ia903100.us.archive.org/28/items/MichaelCoxTheMixer/Michael%20Cox%20-%20The%20Mixer.pdf"
+    },
+    {
+      "id": "4",
+      "image": "https://c7.alamy.com/comp/EXTJ38/1960s-usa-authentic-book-of-space-book-cover-EXTJ38.jpg",
+      "name": "Space",
+      "read_percentage": 30,
+      "author_name": "Clarke",
+      "genre": "Science Fiction",
+      "book_pdf":"https://www.nasa.gov/wp-content/uploads/2015/03/life_into_space_vol1.pdf"
+    },
+    {
+      "id": "5",
+      "image": "https://c7.alamy.com/comp/KRHMJJ/counterpoint-murder-KRHMJJ.jpg",
+      "name": "Counter ",
+      "read_percentage": 90,
+      "author_name": "Margaret",
+      "genre": "Mystery",
+      "book_pdf":"https://www.diva-portal.org/smash/get/diva2:321781/fulltext01.pdf"
+    },
+    {
+      "id": "6",
+      "image": "https://c7.alamy.com/comp/2MAERXK/the-loves-of-harry-dancer-lawrence-sanders-book-cover-1986-2MAERXK.jpg",
+      "name": "The Loves of Harry Dancer",
+      "read_percentage": 20,
+      "author_name": "Lawrence",
+      "genre": "Romance",
+      "book_pdf":"https://www.moodypublishers.com/mpimages/Marketing/WEB%20Resources/ProductExcerpts/9780802496669-TOC-CH1.pdf"
+    },
+    {
+      "id": "7",
+      "image": "https://c7.alamy.com/comp/HB0MC6/front-cover-of-flight-into-fear-by-peter-saxon-issue-319-of-the-sexton-HB0MC6.jpg",
+      "name": "Fight Into Fear",
+      "read_percentage": 60,
+      "author_name": "Peter",
+      "genre": "Thriller",
+      "book_pdf":"https://oa.upm.es/50315/13/INVE_MEM_2017_273683.pdf"
+    },
+    {
+      "id": "8",
+      "image": "https://c7.alamy.com/comp/B86WF1/jules-verne-a-captain-at-fifteen-cover-B86WF1.jpg",
+      "name": "UN ",
+      "read_percentage": 10,
+      "author_name": "Captaine",
+      "genre": "Adventure",
+      "book_pdf":"https://oa.upm.es/50315/13/INVE_MEM_2017_273683.pdf"
+    },
+    {
+      "id": "9",
+      "image": "https://c7.alamy.com/comp/B8277H/cover-of-the-childrens-book-black-beauty-written-by-anna-sewell-B8277H.jpg",
+      "name": "Black Beauty ",
+      "read_percentage": 90,
+      "author_name": "Anna Aewell",
+      "genre": "Mystery",
+      "book_pdf":"https://www.defence.lk/upload/ebooks/Black%20Beauty.pdf"
+    },
+    {
+      "id": "10",
+      "image": "https://c7.alamy.com/comp/2ANNEXN/cover-of-the-book-of-salgari-the-tigers-by-mompracem-1900-viglongo-editore-of-turin-2ANNEXN.jpg",
+      "name": "Le Tigridi ",
+      "read_percentage": 10,
+      "author_name": "Salcari",
+      "genre": "Adventure",
+      "book_pdf":"https://ilibridileo.altervista.org/wp-content/uploads/2020/12/EMILIO-SALGARI-Le-tigri-di-Mompracem.pdf"
+    }
+  ]
+}

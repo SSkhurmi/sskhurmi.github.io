@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+    .book-details{
+        width:82vw;
+        margin-left: 20px;
+        // border: 2px solid black;
+        
+    
+        .heading{
+            height: 40px;
+            width: 100%;
+            // border: 2px solid black;
+            display: flex;
+            gap: 20px;
+            padding: 10px 10px;
+            font-size: 1.5rem;
+            color: gray;
+            align-items: center;
+            margin-top: 10px;
+            .view{
+                height: 40px;
+                width: 18%;
+                // border: 2px solid black;
+                display: flex;
+                align-items: center;
+            }
+            .view-title{
+                width: 300px;
+            }
+        }
+    
+        .content{
+            // height: 80;
+            width: 100%;
+            // border: 2px solid black;
+            display: flex;
+            gap: 20px;
+            padding: 10px 10px;
+            font-size: 1.5rem;
+            color: gray;
+            align-items: center;
+    
+            .content-view{
+                height: 110px;
+                width: 18%;
+                // border: 2px solid black;
+                display: flex;
+                align-items: center;
+    
+                
+                img{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+    
+            }
+            .title{
+                width: 300px;
+                img{
+
+                    width: 90px;
+                }
+                    display: flex;
+                    .title-content{
+                        margin-left: 10px;
+                        
+                        h3{
+                            color: black;
+                        }
+                    }
+            }
+        }
+    }
+
+// }
+
+
+//media query
+
+@media (max-width:790px){
+    .book-details{
+        .heading{
+            .view-title{
+                width: 170px;
+            }
+        }
+
+        .content{
+          
+           
+            .title{
+                width: 170px;
+                img{
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:701px){
+    .book-details{
+
+        width: 98vw;
+        
+    .content{
+        .title{
+            .title-content{
+                h3{
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    }
+}
+
+@media (max-width:430px){
+    .book-details{
+
+        
+        
+    .content{
+        .title{
+            // width: 100px;
+            img{
+                width: 50px;
+            }
+            .title-content{
+
+                h3{
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    }
+}
+
+
+@media (max-width:375px){
+    .book-details{
+        .heading{
+            .view-title{
+                width: 150px;
+            }
+        }
+        
+        
+    .content{
+        .title{
+            width: 100px;
+            img{
+                width: 50px;
+            }
+        
+    }
+    }
+}
+}
+
+
+
+

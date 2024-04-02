@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.book-form {
+  width: 83vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-form .background-book {
+  height: 500px;
+  width: 500px;
+  background-image: url("../../../public/addbook.jpg");
+  background-position: center;
+  background-size: cover;
+  border-right: 2px solid white;
+}
+.book-form .add-book-section {
+  height: 500px;
+  width: 500px;
+  background-color: #f7f7f7;
+}
+.book-form .add-book-section .form-heading {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 48px;
+  border-bottom: 2px solid #1677ff;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3rem;
+}
+.book-form .add-book-section form {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.book-form .add-book-section form .form-heading {
+  margin-bottom: 15px;
+  margin-left: 36px;
+  border-bottom: 2px solid #1677ff;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.book-form .add-book-section form .form-heading h2 {
+  font-size: 3rem;
+}
+.book-form .add-book-section form .form-label {
+  font-size: 1.6rem;
+  margin-left: 36px;
+}
+.book-form .add-book-section form input {
+  height: 30px;
+  width: 80%;
+  font-size: 1.5rem;
+  border-color: lightgray;
+  margin-top: 10px;
+  margin-left: 35px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+.book-form .add-book-section form .input-file {
+  width: 200px;
+}
+.book-form .add-book-section form input:hover {
+  border-color: #4fc3f7;
+}
+.book-form .add-book-section form span {
+  height: 10px;
+  font-size: 1.5rem;
+  color: red;
+  margin-left: 35px;
+}
+.book-form .add-book-section form .add-book-submit-button {
+  width: 80px;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+.book-form .add-book-section form .add-book-submit-button span {
+  color: white;
+  margin-left: 0px;
+}
+.book-form .add-book-section form .preview-image {
+  height: 100px;
+  width: 100px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+}
+.book-form .add-book-section form .preview-image img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1290px) {
+  .book-form .background-book {
+    width: 350px;
+    background-position: 70%;
+  }
+  .book-form .add-book-section {
+    width: 350px;
+  }
+}
+@media (max-width: 1130px) {
+  .book-form .background-book {
+    width: 350px;
+    background-position: 70%;
+  }
+  .book-form .add-book-section {
+    width: 320px;
+  }
+  .book-form .add-book-section form {
+    width: 320px;
+  }
+}
+@media (max-width: 960px) {
+  .book-form .background-book {
+    display: none;
+  }
+  .book-form .add-book-section {
+    width: 500px;
+  }
+  .book-form .add-book-section form {
+    width: 500px;
+  }
+}
+@media (max-width: 769px) {
+  .book-form .add-book-section {
+    width: 400px;
+  }
+  .book-form .add-book-section form {
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .book-form {
+    width: 98vw;
+    height: 105vh;
+  }
+  .book-form .add-book-section {
+    width: 500px;
+  }
+  .book-form .add-book-section form {
+    width: 500px;
+  }
+}
+@media (max-width: 533px) {
+  .book-form .add-book-section {
+    width: 300px;
+  }
+  .book-form .add-book-section form {
+    width: 300px;
+  }
+}/*# sourceMappingURL=AddBookForm.css.map */

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book-details {
+  width: 82vw;
+  margin-left: 20px;
+}
+.book-details .heading {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  color: gray;
+  align-items: center;
+  margin-top: 10px;
+}
+.book-details .heading .view {
+  height: 40px;
+  width: 18%;
+  display: flex;
+  align-items: center;
+}
+.book-details .heading .view-title {
+  width: 300px;
+}
+.book-details .content {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  color: gray;
+  align-items: center;
+}
+.book-details .content .content-view {
+  height: 110px;
+  width: 18%;
+  display: flex;
+  align-items: center;
+}
+.book-details .content .content-view img {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.book-details .content .title {
+  width: 300px;
+  display: flex;
+}
+.book-details .content .title img {
+  width: 90px;
+}
+.book-details .content .title .title-content {
+  margin-left: 10px;
+}
+.book-details .content .title .title-content h3 {
+  color: black;
+}
+
+@media (max-width: 790px) {
+  .book-details .heading .view-title {
+    width: 170px;
+  }
+  .book-details .content .title {
+    width: 170px;
+  }
+  .book-details .content .title img {
+    width: 80px;
+  }
+}
+@media (max-width: 701px) {
+  .book-details {
+    width: 98vw;
+  }
+  .book-details .content .title .title-content h3 {
+    font-size: 1.3rem;
+  }
+  .book-details .content .title .title-content p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 430px) {
+  .book-details .content .title img {
+    width: 50px;
+  }
+  .book-details .content .title .title-content h3 {
+    font-size: 1.3rem;
+  }
+  .book-details .content .title .title-content p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 375px) {
+  .book-details .heading .view-title {
+    width: 150px;
+  }
+  .book-details .content .title {
+    width: 100px;
+  }
+  .book-details .content .title img {
+    width: 50px;
+  }
+}/*# sourceMappingURL=List.css.map */
