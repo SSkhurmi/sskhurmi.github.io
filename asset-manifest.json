@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d395de78.css",
-    "main.js": "/static/js/main.071809c0.js",
+    "main.js": "/static/js/main.7489f88c.js",
     "static/js/453.3e51356a.chunk.js": "/static/js/453.3e51356a.chunk.js",
     "static/media/libraryloginpagebg.avif": "/static/media/libraryloginpagebg.d65195b2d1d5c2b20ad8.avif",
     "static/media/createuser.jpg": "/static/media/createuser.f8982b80e48a6a8f393a.jpg",
@@ -10,11 +10,11 @@
     "static/media/whitebooklogo.png": "/static/media/whitebooklogo.4cfe19a7de6f755b298b.png",
     "index.html": "/index.html",
     "main.d395de78.css.map": "/static/css/main.d395de78.css.map",
-    "main.071809c0.js.map": "/static/js/main.071809c0.js.map",
+    "main.7489f88c.js.map": "/static/js/main.7489f88c.js.map",
     "453.3e51356a.chunk.js.map": "/static/js/453.3e51356a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d395de78.css",
-    "static/js/main.071809c0.js"
+    "static/js/main.7489f88c.js"
   ]
 }
