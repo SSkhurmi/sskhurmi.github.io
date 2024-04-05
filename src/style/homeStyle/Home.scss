@@ -4,133 +4,150 @@
     box-sizing: border-box;
 }
 
-// body {
-//     background-color: #ffffff;
-//     color: #000000;
-//   }
-  
-  /* Dark Mode */
-  body.dark-mode {
-    // background-color: black;
+body.dark-mode {
     background-color: #333333;
     color: #ffffff;
-    // transition: opacity .5s ease-in-out;
+
+    .ant-input-group {
+        input {
+            background-color: transparent;
+            color: white;
+        }
+    }
+
     .logo {
         background-image: url("../../../public/whitebooklogo.png");
-       
+
     }
-    .sidebar{
+
+    .sidebar {
         background-color: #232222;
 
     }
+
     input::placeholder {
         color: white;
     }
-    .ant-input-affix-wrapper{
+
+    .ant-input-affix-wrapper {
         background-color: transparent;
         color: #f7f7f7;
 
     }
-    .ant-table-tbody{
+
+    .ant-table-tbody {
         background-color: #232222;
         color: white;
     }
-    .ant-table-tbody > tr:hover{
+
+    .ant-table-tbody>tr:hover {
         color: black;
     }
-    .background-book{
+
+    .background-book {
         background-color: #232222;
     }
-    form{
+
+    form {
         background-color: #232222;
-        input{
+
+        input {
             background-color: transparent;
         }
-        input::placeholder:hover{
+
+        input::placeholder:hover {
             color: black;
         }
-        
+
     }
-    .book-details{
+
+    .book-details {
         color: white;
     }
 
     //allreader
 
-    .input-search{
+    .input-search {
 
-        .ant-input{
+        .ant-input {
             background-color: transparent;
             color: white;
         }
-        input::placeholder{
+
+        input::placeholder {
             color: white;
         }
-        .ant-input-group-addon{
+
+        .ant-input-group-addon {
             background-color: #232222 !important;
         }
     }
 
-    .select-role{
-        background-color: transparent;
+    .select-role {
+        .ant-select-selector {
+            background-color: transparent;
             color: white;
+        }
 
-        option{
-            background-color: black;
+        .ant-select-selection-item {
             color: white;
         }
     }
 
     //addbook
-    .add-book-section{
+    .add-book-section {
         background-color: #232222;
     }
-    form{
-        input{
+
+    form {
+        input {
             color: white;
         }
-        input:focus{
+
+        input:focus {
             color: white;
             background-color: #232222;
         }
-        input:hover{
+
+        input:hover {
             background-color: #232222;
         }
     }
+
     //list book
 
-    .heading{
+    .heading {
         color: white;
     }
-    .content{
+
+    .content {
         color: white;
-        
+
     }
-    .book-details .content .title .title-content h3{
+
+    .book-details .content .title .title-content h3 {
         color: white;
     }
-    
-  }
+
+}
 
 html {
     font-size: 62.5%;
 }
 
-.component_section{
+.component_section {
     display: flex;
-    
+
 }
 
 
 //header design strat from thr here
 
 header {
-    height: 12vh;
+    height: 70px;
     width: 100%;
     border-bottom: 1px solid #d3d3d380;
     display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     padding: 0rem 0.7rem;
     font-size: 1.6rem;
     overflow: hidden;
@@ -139,54 +156,33 @@ header {
     .nav {
         height: 100%;
         width: 100%;
-        // border: 2px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0rem 1rem;
+        padding-right: 20px;
+
 
         .logo {
-            height: 40px;
-            width: 230px;
-        
-            // border: 2px solid black;
-            cursor: pointer;
-            background-image: url("../../../public/logo.png");
-            background-position:10px;
-            background-size: cover;
-            margin-left: -30px;
+            width: 240px;
 
-            // display: flex;
-            // justify-content: start;
-            // align-items: center;
-
-            // img{
-            //     height: 100%;
-            //     width: 80%;
-            //     // background-color: transparent;
-            // }
-
+            .logo-bg {
+                height: 40px;
+                width: 240px;
+                cursor: pointer;
+                background-image: url("../../../public/logo.png");
+                background-position: -20px;
+                background-size: cover;
+            }
         }
-        
 
-        .right-header{
+        .right-header {
             height: 100%;
-            width: 70vw;
-            // border: 2px solid black;
-            // padding-left: 25px;
+            width: 90%;
+            padding: 20px;
             margin-left: 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            // .ant-input-affix-wrapper{
-            //     background-color: transparent;
-            // }
-
-           
-
-
-
         }
 
         ul {
@@ -194,6 +190,7 @@ header {
             align-items: center;
             gap: 0.8rem;
             list-style: none;
+
             .nav_icon {
                 font-size: 2rem;
                 padding: 0.8rem 0.8rem;
@@ -205,30 +202,22 @@ header {
                 cursor: pointer;
             }
         }
-
-       
-
     }
-
-
 }
 
 
 //header responsive
 
-.responsive-ul{
+.responsive-ul {
     width: 98vw;
     display: flex;
     align-items: center;
     list-style: none;
     justify-content: right;
-
     display: none;
 
     .nav_icon {
         font-size: 1.7rem;
-        // height: 20px;
-        // width: 20px;
         padding: 0.8rem 0.8rem;
         border-radius: 10%;
     }
@@ -240,17 +229,12 @@ header {
 
 }
 
-
-
-.responsive-header-user-data{
-
-    .header-user-data{
-
-        .user-info{
-            // border: 2px solid black;
+.responsive-header-user-data {
+    .header-user-data {
+        .user-info {
             height: 50px;
             width: 150px;
-            border-radius:10px;
+            border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -266,39 +250,26 @@ header {
         }
     }
 
-    // border: 2px solid black;
     display: none;
-    // flex-direction: column;
-    // justify-content: center;
-    // width: 250px;
-    // // align-items: center;
-    // color: #4096ff;
-    // font-size:1.5rem ;
     margin-bottom: 10px;
 }
 
-.responsive-search{
-    
+.responsive-search {
+
     width: 98vw;
     padding: 10px 10px;
-    // border: 2px solid black;
     display: none;
     align-items: center;
     justify-content: center;
 
-    input{
-        
-       
-    width: 300px;
+    input {
+        width: 300px;
     }
 }
 
-
-
-
 // toltip desgin
 
-.top-sidebar{
+.top-sidebar {
     height: 40px;
     // border: 2px solid black;
     margin-top: 10px;
@@ -306,20 +277,16 @@ header {
     justify-content: space-between;
     padding: 0rem 2.5rem;
 
-    .user-info{
+    .user-info {
         height: 100%;
         width: 100%;
-        // border: 2px solid black;
         display: flex;
-        // justify-content: center;
         align-items: center;
-       
-        // border-bottom:2px solid lightgray ;
-        .user-logo{
+
+        .user-logo {
             height: 30px;
             width: 30px;
             border-radius: 50%;
-            // border: 2px solid black;
             background-color: #227ec3;
             color: white;
             display: flex;
@@ -328,25 +295,25 @@ header {
             font-size: 20px;
         }
 
-        .user-detail{
+        .user-detail {
             height: 40px;
             width: 60%;
-            // border: 2px solid black;
             display: flex;
             flex-direction: column;
-            justify-content:center;
+            justify-content: center;
             align-items: start;
             padding-left: 10px;
 
-            p{
+            p {
                 font-size: 16px;
             }
 
-            .user-name{
-                
+            .user-name {
+                text-transform: capitalize;
                 font-weight: 900;
             }
-            .user-role{
+
+            .user-role {
                 font-size: 1.2rem;
                 color: gray;
                 text-transform: capitalize;
@@ -359,17 +326,12 @@ header {
 
 
 
-.tooltip-header-button{
-    // width: 20.8vw;
-    // border: 2px solid black;
+.tooltip-header-button {
     display: flex;
     align-items: center;
-    // justify-content: flex-end;
     gap: 2px;
-    // margin-top: 10px;
-    // margin-right: 60px;
 
-    Button{
+    Button {
         width: 25px;
         display: flex;
         justify-content: center;
@@ -379,118 +341,98 @@ header {
 
 //media query
 
-@media (max-width:900px){
-    .responsive-ul{
+@media (max-width:900px) {
+    .responsive-ul {
         display: flex;
-        // padding: 0px 20px;
-    }
-header{
 
-    .header-user-data{
-        display: none;
     }
 
-    .nav{
-        width: 100vw;
-        .logo{
-            width: 170px;
+    header {
+
+        .header-user-data {
+            display: none;
         }
 
-        .right-header{
-            width: 100px;
-            display: none;
-            .header-ul{
+        .nav {
+            width: 100vw;
+
+            .logo {
+                width: 170px;
+            }
+
+            .right-header {
+                width: 100px;
                 display: none;
+
+                .header-ul {
+                    display: none;
+                }
             }
         }
+
     }
 
-}
-    
-    .responsive-header{
+    .responsive-header {
         display: flex;
         padding: 0px 27px;
         margin-top: 10px;
-        // border: 2px solid green;
 
     }
-    
-    .responsive-header-user-data{
-        // border: 2px solid black;
+
+    .responsive-header-user-data {
         display: flex;
     }
-
-
-   
 }
 
-@media (max-width:700px){
-    .sidebar{
+@media (max-width:700px) {
+    .sidebar {
         display: none;
     }
 
-    .top-sidebar{
-        
+    .top-sidebar {
         display: flex;
-       
     }
 }
 
-
-@media (max-width:377px){
-    .responsive-header{
-
-        .responsive-ul{
-            Input{
+@media (max-width:377px) {
+    .responsive-header {
+        .responsive-ul {
+            li:last-child {
                 display: none;
             }
         }
     }
 
-    .responsive-search{
+    .responsive-search {
         display: flex;
-    }    
+    }
 }
-// toltip desgin
 
-
-
-//media query of tooltip lestbar
-
-
-
-
-
-// sidebar style starts from the here
-.active{
+.active {
     background-color: #d3d3d380;
 }
 
 
 .sidebar {
-    min-height: 88vh;
+    min-height: 90vh;
     width: 275px;
-    
-    // background-color: #f0f0f0;
-    // border: 2px solid black;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     background-color: #f7f7f7;
 
-    .user-info{
+    .user-info {
         height: 100px;
         width: 100%;
-        // border: 2px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
-       
-        border-bottom:2px solid lightgray ;
-        .user-logo{
+
+        border-bottom: 2px solid lightgray;
+
+        .user-logo {
             height: 50px;
             width: 50px;
             border-radius: 50%;
-            // border: 2px solid black;
             background-color: #227ec3;
             color: white;
             display: flex;
@@ -499,25 +441,25 @@ header{
             font-size: 25px;
         }
 
-        .user-detail{
+        .user-detail {
             height: 100px;
             width: 60%;
-            // border: 2px solid black;
             display: flex;
             flex-direction: column;
-            justify-content:center;
+            justify-content: center;
             align-items: start;
             padding-left: 10px;
 
-            p{
+            p {
                 font-size: 19px;
             }
 
-            .user-name{
-                
+            .user-name {
+                text-transform: capitalize;
                 font-weight: 900;
             }
-            .user-role{
+
+            .user-role {
                 font-size: 1.5rem;
                 color: gray;
                 text-transform: capitalize;
@@ -528,15 +470,12 @@ header{
     }
 
 
-    .sildebar-content{
+    .sildebar-content {
         height: 300px;
         width: 100%;
-        // border: 2px solid black;
         margin-top: 20px;
-
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
 
     }
@@ -546,10 +485,6 @@ header{
     }
 
     .book_section {
-        // height: 16rem;
-        
-        // border: 2px solid black;
-
         .book_button {
             height: 4rem;
             width: 23rem;
@@ -571,22 +506,23 @@ header{
                 font-size: 16px;
             }
         }
-        .book_button:hover{
+
+        .book_button:hover {
             background-color: #d3d3d380;
-            // color: orange;
             cursor: pointer;
         }
-        
+
     }
-    
-    
-    .setting_section{
+
+
+    .setting_section {
         margin-top: 25px;
-        h3{
+
+        h3 {
             font-size: 1.8rem;
         }
-        // border: 2px solid black;
-        .dark_mode{
+
+        .dark_mode {
             height: 4rem;
             width: 23rem;
             display: flex;
@@ -601,589 +537,417 @@ header{
         }
 
 
-        .dark_mode_switch{
+        .dark_mode_switch {
             border-radius: 50%;
-            margin-left: 7rem; 
+            margin-left: 7rem;
             font-size: 1.3rem;
         }
-        
+
     }
 }
 
 //Cards style starts from the here
 
-.bookgrid{
+.bookgrid {
     height: auto;
     width: 83vw;
     padding: 2rem 2rem;
     display: flex;
-    // justify-content: space-around;
     flex-wrap: wrap;
     gap: 35px;
-    
 
-    .card{
-        height: 28rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-    .bg_image{
-        height:23rem;
-        width: 200px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // align-items: center;
-        padding: 0.8rem;
-        border-radius:15px;
-        cursor: pointer;
+    .card {
+        height: 280px;
 
-        .complete_percentage{
-            font-size: 1.2rem;
-            height: 3rem;
-            width: 4rem;
-            margin-left: 1.2rem;
+        .bg_image {
+            height: 220px;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10%;
-            background-color: rgba(0,0,0, 0);
-            backdrop-filter: blur(2rem);
-            color: white;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.8rem;
+            border-radius: 15px;
+            cursor: pointer;
+
+            .complete_percentage {
+                font-size: 1.2rem;
+                height: 3rem;
+                width: 4rem;
+                margin-left: 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10%;
+                background-color: rgba(0, 0, 0, 0);
+                backdrop-filter: blur(2rem);
+                color: white;
+            }
+
+            .book_name {
+                font-size: 1.3rem;
+                width: fit-content;
+                color: white;
+                border-radius: 10%;
+                background-color: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(1rem);
+                padding: 10px 10px;
+            }
+
         }
 
-        .book_name{
-            font-size: 1.3rem;
-            // height: 3rem;
-            // width: 6rem;
-            width: fit-content;
-            color: white;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            border-radius: 10%;
-            background-color: rgba(0,0,0, 0.5);
-            backdrop-filter: blur(1rem);
-            // margin-left: 150px;
-            padding:10px 10px;
+        .comic_deatils {
+            margin: 0.9rem;
         }
 
-    }   
-        .comic_deatils{
-            margin:0.9rem;
-        }
-        .comic_name{
+        .comic_name {
             font-size: 2rem;
             width: 150px;
         }
-        .author_name{
+
+        .author_name {
             font-size: 1.5rem;
-            // 
-        }
 
         }
+    }
 
 }
 
-.data-not-found{
+.modal-pdf {
+    margin-top: -50px;
+}
+
+.data-not-found {
     margin-top: 20px;
     width: 80vw;
     text-align: center;
     font-size: 18px;
 }
 
-// .modal{
-//     border: 2px solid black;
-//     height:80%;
-//     width: 80%;
-//     background-color: #ffffff;
-
-//     .selected-data{
-//         display: flex;
-//     }
-
-
-// }
-
-
 //cards media query
 
-@media (max-width:1450px){
-    .bookgrid{
-        
+@media (max-width:1450px) {
+    .bookgrid {
+
         gap: 15px;
     }
 }
 
-@media (max-width:1355px){
-    .bookgrid{
-        
+@media (max-width:1355px) {
+    .bookgrid {
         gap: 20px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-        .bg_image{
-        
-            width: 230px;
+        .card {
+            height: 30rem;
+
+            .bg_image {
+
+                width: 230px;
+            }
         }
     }
-}
-    
+
 }
 
-@media (max-width:1290px){
-    .bookgrid{
-        
+@media (max-width:1290px) {
+    .bookgrid {
         gap: 15px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-        .bg_image{
-        
-            width: 210px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 120px;
+            .bg_image {
+                width: 210px;
             }
         }
     }
 }
-    
-}
 
-@media (max-width:1193px){
-    .bookgrid{
-        
+@media (max-width:1193px) {
+    .bookgrid {
         gap: 25px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-        .bg_image{
-        
-            width: 250px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 150px;
+            .bg_image {
+                width: 250px;
             }
         }
     }
 }
-    
-}
 
-@media (max-width:1150px){
-    .bookgrid{
-        
+@media (max-width:1150px) {
+    .bookgrid {
         gap: 15px;
     }
 }
 
-
-@media (max-width:1090px){
-    .bookgrid{
-        
+@media (max-width:1090px) {
+    .bookgrid {
         gap: 10px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-        .bg_image{
-        
-            width: 230px;
+        .card {
+            height: 30rem;
+
+            .bg_image {
+                width: 230px;
+            }
         }
     }
-}
-    
+
 }
 
 
-@media (max-width:1023px){
-    .bookgrid{
-        
+@media (max-width:1023px) {
+    .bookgrid {
         gap: 15px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-        .bg_image{
-        
-            width: 210px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 120px;
+            .bg_image {
+                width: 210px;
             }
         }
     }
 }
-}
 
 
-@media (max-width:983px){
-    .bookgrid{
-        
+@media (max-width:983px) {
+    .bookgrid {
         gap: 15px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-        .bg_image{
-        
-            width: 210px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 120px;
+            .bg_image {
+                width: 210px;
             }
         }
     }
-}
-    
+
 }
 
-@media (max-width:970px){
-    .bookgrid{
-        
+@media (max-width:970px) {
+    .bookgrid {
         gap: 10px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        // border: 2px solid black;
-        // border-radius: 5%;
 
-        .bg_image{
-        
-            width: 200px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 110px;
+            .bg_image {
+                width: 200px;
             }
         }
     }
-}
-    
+
 }
 
-@media (max-width:926px){
-    .bookgrid{
-        
+@media (max-width:926px) {
+    .bookgrid {
         gap: 25px;
-        
-        
-    
-    .card{
-        height: 30rem;
-    
 
-        .bg_image{
-        
-            width: 250px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 150px;
+            .bg_image {
+                width: 250px;
             }
         }
     }
-}
-    
+
 }
 
-@media (max-width:838px){
-    .bookgrid{
-        
+@media (max-width:838px) {
+    .bookgrid {
         gap: 15px;
-      
-        
-    
-    .card{
-        height: 30rem;
-        
 
-        .bg_image{
-        
-            width: 220px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 140px;
+            .bg_image {
+                width: 220px;
             }
         }
     }
-}
-    
+
 }
 
-@media (max-width:763px){
-    .bookgrid{
-        
+@media (max-width:763px) {
+    .bookgrid {
         gap: 15px;
-        // width: 20%;
-        
-    
-    .card{
-        height: 30rem;
 
+        .card {
+            height: 30rem;
 
-        .bg_image{
-        
-            width: 200px;
-
-            .book_name{
-                margin-left: 110px;
+            .bg_image {
+                width: 200px;
             }
         }
     }
-}
-    
+
 }
 
-@media (max-width:720px){
-    .bookgrid{
-        
+@media (max-width:720px) {
+    .bookgrid {
         gap: 15px;
-       
-    
-    .card{
-        height: 30rem;
-        
 
-        .bg_image{
-        
-            width: 180px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 110px;
+            .bg_image {
+                width: 180px;
             }
         }
     }
+
 }
-    
-}
 
-@media (max-width:707px){
-    .bookgrid{
-        
-       
-    .card{
-        height: 30rem;
-        // min-width: 20%;
-        
+@media (max-width:707px) {
+    .bookgrid {
+        .card {
+            height: 30rem;
 
-        .bg_image{
-        
-            width: 150px;
-
-            .book_name{
-                margin-left: 70px;
+            .bg_image {
+                width: 150px;
             }
         }
+
+        .comic_name {
+            width: 10px;
+        }
     }
-    .comic_name{
-        width: 10px;
-    }
-}
-    
+
 }
 
-@media (max-width:700px){
-    .bookgrid{
+@media (max-width:700px) {
+    .bookgrid {
         width: 100vw;
-   
-    .card{
-        height: 30rem;
-     
 
-        .bg_image{
-        
-            width: 200px;
+        .card {
+            height: 30rem;
 
-            .book_name{
-                margin-left: 70px;
+            .bg_image {
+                width: 200px;
             }
         }
-    }
-    .comic_name{
-        width: 10px;
-    }
-}
-    
-}
-@media (max-width:690px){
-    .bookgrid{
-        
-        
-    .card{
-        height: 30rem;
-     
-        border-radius: 5%;
 
-        .bg_image{
-        
-            width: 170px;
-
-            .book_name{
-                margin-left: 70px;
-            }
+        .comic_name {
+            width: 10px;
         }
     }
-    .comic_name{
-        width: 10px;
+
+}
+
+@media (max-width:690px) {
+    .bookgrid {
+        .card {
+            height: 30rem;
+            border-radius: 5%;
+
+            .bg_image {
+                width: 170px;
+            }
+        }
+
+        .comic_name {
+            width: 10px;
+        }
     }
+
 }
-    
-}
-@media (max-width:600px){
-    .bookgrid{
-        
+
+@media (max-width:600px) {
+    .bookgrid {
         gap: 25px;
-       
-    .card{
-        height: 30rem;
-        
-        border-radius: 5%;
 
-        .bg_image{
-        
-            width: 230px;
+        .card {
+            height: 30rem;
+            border-radius: 5%;
 
-            .book_name{
-                margin-left: 70px;
+            .bg_image {
+                width: 230px;
             }
         }
-    }
-    .comic_name{
-        width: 10px;
-        
-}
-}
-    
-}
-@media (max-width:550px){
-    .bookgrid{
-        
-        
-    .card{
-        height: 30rem;
-        border-radius: 5%;
 
-        .bg_image{
-        
-            width: 220px;
+        .comic_name {
+            width: 10px;
 
-            .book_name{
-                margin-left: 70px;
-            }
         }
     }
-    .comic_name{
-        width: 10px;
-    }
-}
-    
+
 }
 
-@media (max-width:525px){
-    .bookgrid{
-        
-        
-    .card{
-        height: 30rem;
-        
-        .bg_image{
-        
-            width: 200px;
+@media (max-width:550px) {
+    .bookgrid {
+        .card {
+            height: 30rem;
+            border-radius: 5%;
 
-            .book_name{
-                margin-left: 70px;
+            .bg_image {
+                width: 220px;
             }
         }
-    }
-    .comic_name{
-        width: 10px;
-    }
-}
-    
-}
 
-@media (max-width:490px){
-    .bookgrid{
-       
-    .card{
-        height: 30rem;
-    
-
-        .bg_image{
-        
-            width: 170px;
-
-            .book_name{
-                margin-left: 70px;
-            }
+        .comic_name {
+            width: 10px;
         }
     }
-    .comic_name{
-        width: 10px;
+
+}
+
+@media (max-width:525px) {
+    .bookgrid {
+        .card {
+            height: 30rem;
+
+            .bg_image {
+                width: 200px;
+            }
+        }
+
+        .comic_name {
+            width: 10px;
+        }
     }
 }
-    
+
+@media (max-width:490px) {
+    .bookgrid {
+        .card {
+            height: 30rem;
+
+            .bg_image {
+                width: 170px;
+            }
+        }
+
+        .comic_name {
+            width: 10px;
+        }
+    }
+
 }
-@media (max-width:425px){
-    .bookgrid{
-        
-        
+
+@media (max-width:425px) {
+    .bookgrid {
         justify-content: center;
-        
-    .card{
-        height: 30rem;
-        .bg_image{
-        
-            width: 250px;
 
-            .book_name{
-                margin-left: 70px;
+        .card {
+            height: 30rem;
+
+            .bg_image {
+                width: 230px;
             }
         }
+
+        .comic_name {
+            width: 10px;
+        }
     }
-    .comic_name{
-        width: 10px;
-    }
-}
-    
+
 }

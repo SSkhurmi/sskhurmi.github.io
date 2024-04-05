@@ -11,16 +11,16 @@
   justify-content: center;
 }
 .book-form .background-book {
-  height: 500px;
-  width: 500px;
+  height: 90%;
+  width: 45%;
   background-image: url("../../../public/addbook.jpg");
   background-position: center;
   background-size: cover;
   border-right: 2px solid white;
 }
 .book-form .add-book-section {
-  height: 500px;
-  width: 500px;
+  height: 90%;
+  width: 45%;
   background-color: #f7f7f7;
 }
 .book-form .add-book-section .form-heading {
@@ -37,16 +37,6 @@
   display: flex;
   justify-content: start;
   flex-direction: column;
-}
-.book-form .add-book-section form .form-heading {
-  margin-bottom: 15px;
-  margin-left: 36px;
-  border-bottom: 2px solid #1677ff;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.book-form .add-book-section form .form-heading h2 {
-  font-size: 3rem;
 }
 .book-form .add-book-section form .form-label {
   font-size: 1.6rem;
@@ -137,9 +127,9 @@
 @media (max-width: 700px) {
   .book-form {
     width: 98vw;
-    height: 105vh;
   }
   .book-form .add-book-section {
+    height: 100%;
     width: 500px;
   }
   .book-form .add-book-section form {

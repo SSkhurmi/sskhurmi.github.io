@@ -1,6 +1,6 @@
 import { call, put, takeEvery, takeLatest } from 'redux-saga/effects';
 
-const url = 'http://localhost:4000/books'
+const url = 'https://sskhurmi.github.io/bookdetails/bookdata.json'
 const fetchData = async () => {
   try {
     const res = await fetch(url);
@@ -8,16 +8,14 @@ const fetchData = async () => {
     return result;
 
   } catch (error) {
-    throw error; // Rethrow error to be caught by the caller
+    throw error;
   }
 };
-
 
 function* fetchBook() {
   try {
     const data = yield call(fetchData);
-    console.log('Error fetching data:', data);
-    yield put({ type: "SHOW_BOOK_SUCCESS", data: data });
+    yield put({ type: "SHOW_BOOK_SUCCESS", data: data.books });
 
   } catch (e) {
     console.log(e);
@@ -26,37 +24,39 @@ function* fetchBook() {
 
 const fetchUserData = async () => {
   try{
-    const res = await fetch("http://localhost:5000/reader");
+    const res = await fetch("https://sskhurmi.github.io/userdata/userdata.json");
   const result = await res.json()
   return result;
   } catch (error){
     console.log(error);
-  }
-  
+  } 
 }
 
 function* fetchUser() {
   try {
     const data = yield call(fetchUserData);
-    console.log('Error fetching data:', data);
-    yield put({ type: "SHOW_USER_SUCCESS", data: data });
+    yield put({ type: "SHOW_USER_SUCCESS", data: data.reader });
 
   } catch (e) {
     console.log(e);
   }
 }
 
-
-
-
 function* mySaga() {
   yield takeLatest('SHOW_BOOK', fetchBook)
-  yield takeEvery("SHOW_USER", fetchUser)
-  // yield takeEvery("ADD_BOOK", addNew)
+  yield takeLatest("SHOW_USER", fetchUser)
 
 }
 
 export default mySaga;  
+
+
+
+
+
+
+
+
 
 
 

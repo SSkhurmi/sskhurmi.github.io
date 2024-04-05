@@ -64,16 +64,16 @@
   justify-content: center;
 }
 .reader-form .reader-form-background-color {
-  height: 450px;
-  width: 500px;
+  height: 80%;
+  width: 45%;
   background-image: url("../../../public/createuser.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .reader-form form {
-  height: 450px;
-  width: 450px;
+  height: 80%;
+  width: 45%;
   box-shadow: 0px 0px 20px gray;
   display: flex;
   flex-direction: column;
@@ -100,10 +100,12 @@
   height: 30px;
   width: 70%;
   margin-left: 50px;
-  border-radius: 5px;
-  border: 1px solid lightgray;
+  color: black;
 }
-.reader-form form span {
+.reader-form form .select-role span {
+  color: gray;
+}
+.reader-form form .formerror {
   height: 10px;
   font-size: 1.4rem;
   color: red;
@@ -150,6 +152,9 @@
   .reader-form form input {
     width: 270px;
   }
+  .reader-form form .select-role {
+    width: 270px;
+  }
 }
 @media (max-width: 700px) {
   .reader-form {
@@ -157,9 +162,13 @@
     width: 100vw;
   }
   .reader-form form {
+    height: 450px;
     width: 400px;
   }
   .reader-form form input {
+    width: 270px;
+  }
+  .reader-form form .select-role {
     width: 270px;
   }
 }
@@ -168,6 +177,9 @@
     width: 300px;
   }
   .reader-form form input {
+    width: 190px;
+  }
+  .reader-form form .select-role {
     width: 190px;
   }
 }/*# sourceMappingURL=AllReader.css.map */

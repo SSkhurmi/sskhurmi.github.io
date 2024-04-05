@@ -1,51 +1,53 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.all-reader{
+.all-reader {
     width: 83vw;
     // border: 2px solid black;
     padding: 10px 10px;
-    .user-buttons{
+
+    .user-buttons {
 
         display: flex;
         justify-content: left;
         align-items: center;
         gap: 15px;
-        .create-user-button{
+
+        .create-user-button {
             padding-left: 6px;
             padding-right: 15px;
             display: flex;
             justify-content: start;
             align-items: center;
             gap: 3px;
-            
-            
 
-            
-            
-            span{
+
+
+
+
+            span {
                 // color: aliceblue;
                 margin-left: 0px;
-              padding: 1px;
+                padding: 1px;
 
             }
         }
 
-        .input-search{
+        .input-search {
             // height: 45px;
             width: 250px;
-            
+
         }
 
 
 
     }
-   
-   
-    h2{
+
+
+    h2 {
         margin-top: 33px;
         // margin-left: 125px;
         font-size: 2rem;
@@ -53,52 +55,41 @@
         width: fit-content;
     }
 
-   
-    .reader-table{
+
+    .reader-table {
         margin-top: 30px;
         // padding: ;
         // width: 1000px;
         // margin-left: 125px;
-    //     padding: 10px 15px;
+        //     padding: 10px 15px;
     }
-    
+
 }
 
 // table responsive
 
-@media (max-width:700px){
-    .all-reader{
+@media (max-width:700px) {
+    .all-reader {
 
-        hr{
+        hr {
             width: 95vw;
         }
 
-        .reader-details{
-            
+        .reader-details {
+
             width: 95vw;
         }
     }
 }
 
 
-@media (max-width:400px){
-    // .all-reader{
-        
-    //     .reader-table{
-    //         width: 100px;
-    //         border: 1px solid black;
-            
-    //     }
-    //     .ant-table-content{
-    //         border: 2px solid black;
-    //         width: fit-content;
-    //     }
-    // }
-    .ant-table-thead>tr>th{
+@media (max-width:400px) {
+
+    .ant-table-thead>tr>th {
         padding: 16px 5px !important;
     }
 
-    .ant-table-content >table >tbody>tr>td {
+    .ant-table-content>table>tbody>tr>td {
         padding: 16px 5px !important;
 
     }
@@ -108,7 +99,7 @@
 
 //  reader form 
 
-.reader-form{
+.reader-form {
     width: 83vw;
     // border: 2px solid black;
     padding: 10px 10px;
@@ -116,24 +107,24 @@
     // flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
 
-    .reader-form-background-color{
-        height: 450px;
-        width: 500px;
+
+
+    .reader-form-background-color {
+        height: 80%;
+        width: 45%;
         // border: 2px solid black;
-        background-image:url("../../../public/createuser.jpg");
+        background-image: url("../../../public/createuser.jpg");
         background-position: center;
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
     }
-    
 
-    form{
-     
-        height: 450px;
-        width: 450px;
+
+    form {
+
+        height: 80%;
+        width: 45%;
         // border: 2px solid black;
         box-shadow: 0px 0px 20px gray;
         display: flex;
@@ -142,7 +133,7 @@
         justify-content: center;
         // align-items: center;
 
-        h3{
+        h3 {
             // margin-top: 40px;
             margin-bottom: 30px;
             font-size: 2rem;
@@ -151,53 +142,62 @@
             width: fit-content;
         }
 
-        .form-label{
+        .form-label {
             font-size: 1.6rem;
             margin-left: 55px;
         }
-        input{
+
+        input {
             height: 30px;
             width: 70%;
             margin-left: 50px;
         }
-        .select-role{
+
+        .select-role {
             height: 30px;
             width: 70%;
             margin-left: 50px;
-            border-radius: 5px;
-            border: 1px solid lightgray;
+            color: black;
+
+            span {
+
+                color: gray;
+            }
         }
-        span{
+
+        .formerror {
             height: 10px;
-     
+
             font-size: 1.4rem;
-            color:red;
+            color: red;
             margin-left: 50px;
         }
-        .reader-form-button{
+
+        .reader-form-button {
             margin-left: 50px;
             width: 80px;
-            span{
+
+            span {
                 color: aliceblue;
                 margin-left: 0px;
             }
         }
 
-       
+
     }
 }
 
 //reader form responsive
 
-@media (max-width:1300px){
-    .reader-form{
+@media (max-width:1300px) {
+    .reader-form {
 
-        .reader-form-background-color{
+        .reader-form-background-color {
             height: 450px;
-            width:450px ;
+            width: 450px;
         }
 
-        form{
+        form {
             width: 450px;
 
             // input{
@@ -205,17 +205,18 @@
             // }
         }
 
+    }
 }
-}
-@media (max-width:1200px){
-    .reader-form{
 
-        .reader-form-background-color{
+@media (max-width:1200px) {
+    .reader-form {
+
+        .reader-form-background-color {
             // height: 510px;
-            width:350px ;
+            width: 350px;
         }
 
-        form{
+        form {
             width: 380px;
 
             // input{
@@ -223,16 +224,17 @@
             // }
         }
 
+    }
 }
-}
-@media (max-width:1020px){
-    .reader-form{
 
-        .reader-form-background-color{
+@media (max-width:1020px) {
+    .reader-form {
+
+        .reader-form-background-color {
             display: none;
         }
 
-        form{
+        form {
             width: 380px;
 
             // input{
@@ -240,47 +242,58 @@
             // }
         }
 
-}
+    }
 }
 
-@media (max-width:800px){
-    .reader-form{
-        form{
+@media (max-width:800px) {
+    .reader-form {
+        form {
             width: 400px;
 
-            input{
+            input {
+                width: 270px;
+            }
+            .select-role{
                 width: 270px;
             }
         }
 
-}
+    }
 }
 
-@media (max-width:700px){
-    .reader-form{
+@media (max-width:700px) {
+    .reader-form {
         margin-top: 35px;
         width: 100vw;
+
         // height: 95vw;
-        form{
+        form {
+            height: 450px;
             width: 400px;
 
-            input{
+            input {
+                width: 270px;
+            }
+            .select-role{
                 width: 270px;
             }
         }
 
-}
+    }
 }
 
-@media (max-width:450px){
-    .reader-form{
-        form{
+@media (max-width:450px) {
+    .reader-form {
+        form {
             width: 300px;
 
-            input{
+            input {
+                width: 190px;
+            }
+            .select-role{
                 width: 190px;
             }
         }
 
-}
+    }
 }

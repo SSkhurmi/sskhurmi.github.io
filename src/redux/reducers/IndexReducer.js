@@ -1,8 +1,8 @@
-import allBook from "./ShowbookReducer";
+import alldata from "./userBookReducer";
 import { combineReducers } from "@reduxjs/toolkit";
 
 const rootReducers = combineReducers({
-    allBook
- });
- 
- export default rootReducers;
+    alldata
+});
+
+export default rootReducers;

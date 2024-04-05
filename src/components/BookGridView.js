@@ -1,19 +1,11 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
-
 import { Modal } from 'antd';
 
-
-function Books_grid(props) {
-
-  const { filter, showNotFound, serachEnable, searchValue } = props;
-  const allBooks = useSelector((state) => state.allBook);
+function BookGridView(props) {
+  const { filter, showNotFound, serachEnable } = props;
+  const allBooks = useSelector((state) => state.alldata);
   const [selectedData, setSelectedData] = useState({});
-
-
-
-  console.log(allBooks, showNotFound, serachEnable);
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = (val) => {
@@ -28,19 +20,17 @@ function Books_grid(props) {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  
 
-
-  console.log("filter val", filter);
   return (
     <>
       {filter.length > 0 ? (
         <div className='bookgrid'>
           {filter && filter.length > 0 && filter.map((val) => {
-            // console.log(index);
             return (
               <div key={val.id} className='card' onClick={() => showModal(val)} >
                 <div className='bg_image' style={{ backgroundImage: `url("${val.image}")` }}>
-                  <div className='complete_percentage'>{val.read_percentage}</div>
+                  <div className='complete_percentage'>{val.read_percentage}%</div>
                   <div className='book_name'>{val.genre} </div>
                 </div>
                 <div className='comic_deatils'>
@@ -54,8 +44,7 @@ function Books_grid(props) {
         </div>
       ) : (
         serachEnable && showNotFound ? (!filter.length && <p className="data-not-found">
-           {/* <span style={{ color: "#1677ff" }}>"{searchValue}"</span> */}
-            Result not Found </p>)
+          Result not Found </p>)
           : (
 
             <div className='bookgrid'>
@@ -79,24 +68,20 @@ function Books_grid(props) {
           )
 
       )}
-
-
-      <Modal height={"60%"} width={"80%"} title={`Book Name: ${selectedData.name}`} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} >
-        {console.log(selectedData)}
-
+      <Modal
+        height="80%"
+        width="80%"
+        className='modal-pdf'
+        title={`Book Name: ${selectedData.name}`}
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel} >
         <embed src={selectedData.book_pdf} type="application/pdf" width="100%" height="500px" />
-
-
-
       </Modal>
-
-
-
-
 
     </>
 
   );
 }
 
-export default Books_grid
+export default BookGridView
